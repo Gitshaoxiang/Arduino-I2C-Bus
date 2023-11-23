@@ -1,0 +1,16 @@
+{
+  "name": "Arduino-I2C-Bus",
+  "description": "Simple Library for Arduino I2C",
+  "keywords": "Arduino I2C",
+  "authors": {
+    "name": "Sean Kwok",
+    "url": "https://github.com/Gitshaoxiang"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gitshaoxiang/Arduino-I2C-Bus.git"
+  },
+  "version": "1.0.0",
+  "frameworks": "arduino",
+  "platforms": "espressif32"
+}
