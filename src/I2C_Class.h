@@ -4,15 +4,16 @@
 #include "Arduino.h"
 #include "Wire.h"
 
-class I2C_BUS {
+class I2C_Class {
    private:
     TwoWire* _wire;
     uint8_t _scl;
     uint8_t _sda;
-    uint8_t _freq;
+    long _freq;
 
    public:
     void begin(TwoWire* wire, uint8_t sda, uint8_t scl, long freq = 100000);
+    bool exist(uint8_t addr);
     bool writeBytes(uint8_t addr, uint8_t reg, uint8_t* buffer, uint8_t length);
     bool readBytes(uint8_t addr, uint8_t reg, uint8_t* buffer, uint8_t length);
     bool writeByte(uint8_t addr, uint8_t reg, uint8_t data);
